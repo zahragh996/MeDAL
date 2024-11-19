@@ -11,3 +11,8 @@ downstream/runs/*
 runs/*
 interpretability/*
 xing_han/interpretability/*
+medal/data/data/test.csv
+medal/data/data/train.csv
+medal/data/data/valid.csv
+dist/medal-0.1.0-py3-none-any.whl
+dist/medal-0.1.0.tar.gz

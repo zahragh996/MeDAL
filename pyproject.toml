@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "medal"
+version = "0.1.0"
+description = ""
+authors = ["zahragh996 <zahra.gh995@gmail.com>"]
+readme = "README.md"
+packages = [{include = "medal"}]  # Ensure this matches your package folder
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+certifi = "2024.8.30"
+charset-normalizer = "3.4.0"
+urllib3 = "2.2.3"
+filelock = "3.16.1"
+fsspec = "2024.10.0"
+packaging = "24.2"
+pyyaml = "6.0.2"
+requests = "2.32.3"
+tqdm = "4.67.0"
+typing-extensions = "^4.6.0"  # Updated to match mypy's requirement
+huggingface-hub = "0.16.4"
+tokenizers = "0.14.0"
+transformers = "4.34.0"
+scipy = "^1.10"  # Compatible with Python 3.11
+regex = "2024.11.6"
+safetensors = "0.4.5"
+click = ">=8.0.0"  # Updated click to a compatible version
+smart-open = ">=5.2.1"  # Ensure it remains at or above the problematic version
+numpy = ">=1.26.4"
+pandas = ">=1.1.4"
+gensim = ">=4.0.0"
+torch = ">=1.7.0"
+sentencepiece = ">=0.1.91"
+fasttext = ">=0.9.2"
+pybind11 = ">=2.13.6"
+cython = ">=0.29.30"
+idna = "2.10"
+setuptools = "*"
+dataclasses = "0.6"
+future = "0.18.2"
+joblib = "1.2.0"
+lxml = "4.9.1"
+protobuf = "3.18.3"
+pyparsing = "2.4.7"
+python-dateutil = "2.8.1"
+pytz = "2020.4"
+sacremoses = "0.0.43"
+six = "1.15.0"
+
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4"
+black = "^23.7"
+mypy = "^1.5.1"  # Matches the mypy dependency with compatible typing-extensions
+flake8 = "^6.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
